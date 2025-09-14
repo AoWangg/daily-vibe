@@ -1,5 +1,7 @@
 # Daily Vibe
 
+![Daily Vibe](https://www.daily-vibe.online/twitter-image.png)
+
 [English](README.md) | **中文**
 
 Daily Vibe 是一款强大的 CLI 工具，可以分析你在 Claude Code 和 Codex CLI 中的编程会话，生成富有洞察力的日报和知识提取。通过 AI 驱动的分析，将你的开发活动转化为有意义的见解。

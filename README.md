@@ -1,5 +1,7 @@
 # Daily Vibe
 
+![Daily Vibe](https://www.daily-vibe.online/twitter-image.png)
+
 **English** | [中文](README_CN.md)
 
 Daily Vibe is a powerful CLI tool that analyzes your coding sessions from Claude Code and Codex CLI to generate insightful daily reports and knowledge extraction. Transform your development activity into meaningful insights with AI-powered analysis.
