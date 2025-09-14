@@ -1,0 +1,95 @@
+{
+  "name": "daily-vibe",
+  "description": "Analyze your coding sessions from Claude Code & Codex to generate daily reports and knowledge extraction",
+  "version": "1.0.0",
+  "author": "Orville-Wang",
+  "bin": {
+    "daily-vibe": "./bin/run.js"
+  },
+  "bugs": "https://github.com/AoWangg/daily-vibe/issues",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.62.0",
+    "@oclif/core": "^4",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^5",
+    "chalk": "^5.6.2",
+    "cosmiconfig": "^9.0.0",
+    "dayjs": "^1.11.18",
+    "fast-glob": "^3.3.3",
+    "openai": "^5.20.2",
+    "ora": "^8.2.0",
+    "split2": "^4.2.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1",
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^4",
+    "@types/chai": "^4",
+    "@types/mocha": "^10",
+    "@types/node": "^18",
+    "chai": "^4",
+    "eslint": "^9",
+    "eslint-config-oclif": "^6",
+    "eslint-config-prettier": "^10",
+    "mocha": "^10",
+    "oclif": "^4",
+    "shx": "^0.3.3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "./bin",
+    "./dist",
+    "./oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/AoWangg/daily-vibe",
+  "keywords": [
+    "oclif",
+    "claude-code",
+    "codex",
+    "ai",
+    "analysis",
+    "daily-report"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "oclif": {
+    "bin": "daily-vibe",
+    "dirname": "daily-vibe",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "analyze": {
+        "description": "Analyze coding sessions and generate reports"
+      },
+      "config": {
+        "description": "Manage configuration settings"
+      },
+      "sources": {
+        "description": "Manage and scan data sources"
+      },
+      "redact": {
+        "description": "Test and manage data redaction"
+      }
+    }
+  },
+  "repository": "AoWangg/daily-vibe",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b && shx cp -r src/prompts dist/",
+    "lint": "eslint",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "pnpm run lint",
+    "prepack": "oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "types": "dist/index.d.ts"
+}
