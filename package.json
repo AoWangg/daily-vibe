@@ -1,7 +1,7 @@
 {
   "name": "daily-vibe",
   "description": "Analyze your coding sessions from Claude Code & Codex to generate daily reports and knowledge extraction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Orville-Wang",
   "bin": {
     "daily-vibe": "./bin/run.js"

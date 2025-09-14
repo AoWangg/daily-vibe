@@ -50,7 +50,7 @@ daily-vibe config set --provider openai --api-key sk-your-api-key
 daily-vibe config set --provider anthropic --api-key sk-ant-your-api-key
 
 # For custom OpenAI-compatible API (e.g., DashScope)
-daily-vibe config set --provider generic --base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --api-key sk-your-api-key
+daily-vibe config set --provider generic --base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --api-key sk-your-api-key --model qwen-plus
 ```
 
 2. **Analyze today's sessions:**

@@ -50,7 +50,7 @@ daily-vibe config set --provider openai --api-key sk-你的API密钥
 daily-vibe config set --provider anthropic --api-key sk-ant-你的API密钥
 
 # 自定义 OpenAI 兼容 API（如阿里云灵积）
-daily-vibe config set --provider generic --base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --api-key sk-你的API密钥
+daily-vibe config set --provider generic --base-url https://dashscope.aliyuncs.com/compatible-mode/v1 --api-key sk-你的API密钥 --model qwen-plus
 ```
 
 2. **分析今日会话：**
